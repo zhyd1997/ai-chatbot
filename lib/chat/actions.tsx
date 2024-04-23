@@ -57,7 +57,7 @@ async function confirmPurchase(symbol: string, price: number, amount: number) {
   const systemMessage = createStreamableUI(null)
 
   runAsyncFnWithoutBlocking(async () => {
-    await sleep(1000)
+    await sleep(30000)
 
     purchasing.update(
       <div className="inline-flex items-start gap-1 md:items-center">
