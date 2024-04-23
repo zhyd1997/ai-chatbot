@@ -36,6 +36,9 @@ import { SpinnerMessage, UserMessage } from '@/components/stocks/message'
 import { Chat } from '@/lib/types'
 import { auth } from '@/auth'
 
+// @see https://github.com/vercel/ai-chatbot/issues/291
+export const maxDuration = 120
+
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY || ''
 })
